@@ -1,0 +1,52 @@
+# ============================================================
+# POOJA BHAKTI BHAJAN — .gitignore
+# Only the clean static site files are tracked.
+# All credential files, WordPress scripts & binaries are excluded.
+# ============================================================
+
+# ----- LOCAL DEPLOYMENT SCRIPTS (contain SSH / server credentials) -----
+check_cache.py
+deploy_pbb.py
+download_audio.py
+verify_live.py
+
+# ----- WORDPRESS / ADMIN SCRIPTS (contain WordPress passwords) -----
+wp_fix.ps1
+wp_header_update.ps1
+wp_xmlrpc.ps1
+find_mp3.ps1
+
+# ----- WORDPRESS PLUGIN FILES (not needed for static Vercel deploy) -----
+pbb-devotional-portal.php
+template-portal.php
+pbb-devotional-portal.zip
+wordpress-integration.md
+
+# ----- STAGING / DUPLICATE PAGES -----
+live_homepage.html
+
+# ----- OS & EDITOR JUNK -----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- NODE / NPM (if ever added) -----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+.env.*
+.env.local
+.env.production
+
+# ----- PYTHON (if ever added) -----
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
